@@ -96,7 +96,7 @@ namespace hashingsql
                     Form2 frm = new Form2();
                     frm.Show();
                     break;
-                    
+                    s
 
                 }
             }
