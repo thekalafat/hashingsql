@@ -57,16 +57,18 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "NAZIM HİKMET";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(418, 42);
+            this.label1.Location = new System.Drawing.Point(325, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 39);
+            this.label1.Size = new System.Drawing.Size(435, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "SEÇİM YAZISI";
+            this.label1.Text = "EN İYİ YAZARLAR SEÇİMİ";
             // 
             // radioButton2
             // 
@@ -79,6 +81,8 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "CEMAL SÜREYA";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton2.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -91,6 +95,8 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "ATİLLA İLHAN";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton3.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -103,9 +109,12 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "MEHMET AKİF ERSOY";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton4.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 148);
             this.pictureBox1.Name = "pictureBox1";
@@ -113,9 +122,11 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(234, 148);
             this.pictureBox2.Name = "pictureBox2";
@@ -123,9 +134,11 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Enabled = false;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(492, 148);
             this.pictureBox3.Name = "pictureBox3";
@@ -133,9 +146,11 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Enabled = false;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(777, 148);
             this.pictureBox4.Name = "pictureBox4";
@@ -143,6 +158,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // button1
             // 
@@ -151,8 +167,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 54);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Seçimi Kaydet";
+            this.button1.Text = "Oy Kullan";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form2
             // 
@@ -170,7 +187,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioButton1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Oy Kullanma Ekranı";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
